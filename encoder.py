@@ -6,7 +6,6 @@ import sys
 
 
 img = imageio.imread(sys.argv[1])
-plt.imshow(img) #im
 
 
 ############################## FIND ENDS #####################################
@@ -50,46 +49,21 @@ for i in range(len(img[ultimaRepetida])):
             
 #Right Margin
 rightMargin = 0
+anterior = 0
 
-for i in reversed(range(len(img[ultimaRepetida]))):
+#for i in reversed(range(len(img[ultimaRepetida]))):
+for i in reversed(range(img.shape[1])):
     if img[ultimaRepetida-1][i] != img[ultimaRepetida][i]:
         if rightMargin ==0:
-            rightMargin = i
+            rightMargin = anterior
+    anterior = i
+            
             
             
 ############################## FIND ENDS #####################################
 
 
 
-
-############################## COMPUTE FIRST AND LAST LINE ###################
-def getFirstLine(common):
-    computedPrimera = []
-
-    for el in common:
-        newVal = (el+255)//2
-        if newVal> (el+(255//2)+0.5):
-            newVal+=1
-        computedPrimera.append(newVal)
-    
-    return computedPrimera
-
-
-def getLastLine(common):
-    computedLast = []
-
-    for el in common:
-        if el != 255:
-            newVal = (el+255)//1.77
-            if newVal> (el+(255//1.77)+0.5):
-                newVal+=1
-        else:
-            newVal = 255
-        computedLast.append(newVal)
-            
-    return computedLast
-
-############################## COMPUTE FIRST AND LAST LINE ###################
 
 
 
@@ -114,9 +88,19 @@ with open(sys.argv[2], "wb+") as f:
     f.write(shape_y.to_bytes(3, byteorder="big", signed=False))
     f.write(shape_x.to_bytes(3, byteorder="big", signed=False))
     
+    f.write(leftMargin.to_bytes(3, byteorder="big", signed=False))
+    f.write(rightMargin.to_bytes(3, byteorder="big", signed=False))
+    f.write(margeInferior.to_bytes(3, byteorder="big", signed=False))
+
     
     for i in range(len(test)):
         f.write(test[i].to_bytes(3, byteorder="big", signed=False))
+    
+    for i in range(12, leftMargin):
+        f.write(int(img[margeInferior][i]).to_bytes(3, byteorder="big", signed=False))
+    
+    for i in range(rightMargin, shape_x):
+        f.write(int(img[margeInferior][i]).to_bytes(3, byteorder="big", signed=False))
 
 ############################## WRITE #####################################
 
