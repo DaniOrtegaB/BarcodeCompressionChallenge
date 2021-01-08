@@ -88,8 +88,6 @@ img_reconstructed = np.array([[255 for x in range(reconstructed_x)] for j in ran
 #asignem la primera fila
 img_reconstructed[12] = primera
 img_reconstructed[13:ultimaRepetida] = finalReconstructed
-print(img_reconstructed)
-
 
 
 #laterals:
