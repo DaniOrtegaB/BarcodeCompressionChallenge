@@ -17,8 +17,8 @@ def getMSE(img1, img2):  # MSE of 2 images
 image1 = imageio.imread(sys.argv[1])
 image2 = imageio.imread(sys.argv[2])
 
-image1 = image1.astype(dtype=np.uint8)
-image2 = image2.astype(dtype=np.uint8)
+image1 = image1.astype(dtype=np.uint64)
+image2 = image2.astype(dtype=np.uint64)
 
 print("The MSE between", sys.argv[1], "and", sys.argv[2], "is:", getMSE(image1, image2))
 

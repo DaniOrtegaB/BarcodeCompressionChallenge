@@ -3,7 +3,6 @@
 import numpy as np
 import imageio
 import sys
-from PIL import Image
 
 
 ############################## RLE DECODER ###################################
@@ -107,7 +106,7 @@ letters = np.asarray(letters)
 
 
 right = (rightMargin-1) - (leftMargin)
-left = (reconstructed_y-7) - (ultimaRepetida+1)
+left = (reconstructed_y-6) - (ultimaRepetida+1)
 
 letters.resize(left, right)
 
@@ -165,7 +164,7 @@ for j in reversed(range(rightMargin, reconstructed_x-12)):
 #WORD
 
 
-for idxi,i in enumerate(range(ultimaRepetida+1, reconstructed_y-9)):
+for idxi,i in enumerate(range(ultimaRepetida+1, reconstructed_y-6)):
     for idxj,j in enumerate(range(leftMargin, rightMargin-1)):
         img_reconstructed[i][j] = letters[idxi][idxj]
 
@@ -175,7 +174,6 @@ for idxi,i in enumerate(range(ultimaRepetida+1, reconstructed_y-9)):
 ############################## SAVE IMAGE ###############################
 
 
-img_reconstructed = img_reconstructed.astype(dtype=np.uint8)
 
 imageio.imwrite(sys.argv[2], img_reconstructed)
 

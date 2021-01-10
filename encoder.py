@@ -96,7 +96,7 @@ for i in reversed(range(img.shape[1])):
 
 ############################## RL ENCODING #####################################
 
-wordBefore = np.array([[img[j][x] for x in range(leftMargin, rightMargin-1)] for j in range(ultimaRepetida+1, shape_y-9)])
+wordBefore = np.array([[img[j][x] for x in range(leftMargin, rightMargin-1)] for j in range(ultimaRepetida+1, shape_y-6)])
 
 wordBefore.resize(len(wordBefore) * len(wordBefore[1]))
 total = (rle_encode(wordBefore))
