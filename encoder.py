@@ -69,11 +69,14 @@ for i in range(img.shape[0]):
 #Left Margin
 leftMargin = 0
            
-for i in range(len(img[ultimaRepetida])):
-    if img[ultimaRepetida-1][i] != img[ultimaRepetida][i]:
-        if leftMargin ==0:
-            leftMargin = i
+a = len(img[ultimaRepetida+1])
+a = a/2
 
+for i in range(int(a)):
+    if img[ultimaRepetida+1][i] != 255:
+        leftMargin = i
+
+leftMargin += 1
             
             
 #Right Margin
@@ -96,7 +99,7 @@ for i in reversed(range(img.shape[1])):
 
 ############################## RL ENCODING #####################################
 
-wordBefore = np.array([[img[j][x] for x in range(leftMargin, rightMargin-1)] for j in range(ultimaRepetida+1, shape_y-6)])
+wordBefore = np.array([[img[j][x] for x in range(leftMargin, rightMargin-1)] for j in range(ultimaRepetida+1, shape_y-7)])
 
 wordBefore.resize(len(wordBefore) * len(wordBefore[1]))
 total = (rle_encode(wordBefore))

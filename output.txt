@@ -16,7 +16,7 @@ The MSE between sample-000034.png and newBarcodes/sample-000034.png-new.png is: 
 The MSE between sample-000035.png and newBarcodes/sample-000035.png-new.png is: 0.0
 The MSE between sample-000037.png and newBarcodes/sample-000037.png-new.png is: 0.0
 The MSE between sample-000038.png and newBarcodes/sample-000038.png-new.png is: 0.0
-The MSE between sample-000039.png and newBarcodes/sample-000039.png-new.png is: 0.7786407766990291
+The MSE between sample-000039.png and newBarcodes/sample-000039.png-new.png is: 0.0
 The MSE between sample-000041.png and newBarcodes/sample-000041.png-new.png is: 0.0
 The MSE between sample-000043.png and newBarcodes/sample-000043.png-new.png is: 0.0
 The MSE between sample-000045.png and newBarcodes/sample-000045.png-new.png is: 0.0
@@ -124,7 +124,7 @@ The MSE between sample-000245.png and newBarcodes/sample-000245.png-new.png is: 
 The MSE between sample-000250.png and newBarcodes/sample-000250.png-new.png is: 0.0
 The MSE between sample-000253.png and newBarcodes/sample-000253.png-new.png is: 0.0
 The MSE between sample-000254.png and newBarcodes/sample-000254.png-new.png is: 0.0
-The MSE between sample-000255.png and newBarcodes/sample-000255.png-new.png is: 0.7786407766990291
+The MSE between sample-000255.png and newBarcodes/sample-000255.png-new.png is: 0.0
 The MSE between sample-000260.png and newBarcodes/sample-000260.png-new.png is: 0.0
 The MSE between sample-000261.png and newBarcodes/sample-000261.png-new.png is: 0.0
 The MSE between sample-000262.png and newBarcodes/sample-000262.png-new.png is: 0.0
@@ -149,7 +149,7 @@ The MSE between sample-000297.png and newBarcodes/sample-000297.png-new.png is: 
 The MSE between sample-000298.png and newBarcodes/sample-000298.png-new.png is: 0.0
 The MSE between sample-000300.png and newBarcodes/sample-000300.png-new.png is: 0.0
 The MSE between sample-000301.png and newBarcodes/sample-000301.png-new.png is: 0.0
-The MSE between sample-000302.png and newBarcodes/sample-000302.png-new.png is: 1.062251655629139
+The MSE between sample-000302.png and newBarcodes/sample-000302.png-new.png is: 0.0
 The MSE between sample-000303.png and newBarcodes/sample-000303.png-new.png is: 0.0
 The MSE between sample-000306.png and newBarcodes/sample-000306.png-new.png is: 0.0
 The MSE between sample-000307.png and newBarcodes/sample-000307.png-new.png is: 0.0
@@ -194,7 +194,7 @@ The MSE between sample-000388.png and newBarcodes/sample-000388.png-new.png is: 
 The MSE between sample-000389.png and newBarcodes/sample-000389.png-new.png is: 0.0
 The MSE between sample-000393.png and newBarcodes/sample-000393.png-new.png is: 0.0
 The MSE between sample-000395.png and newBarcodes/sample-000395.png-new.png is: 0.0
-The MSE between sample-000396.png and newBarcodes/sample-000396.png-new.png is: 0.9721212121212122
+The MSE between sample-000396.png and newBarcodes/sample-000396.png-new.png is: 0.0
 The MSE between sample-000397.png and newBarcodes/sample-000397.png-new.png is: 0.0
 The MSE between sample-000399.png and newBarcodes/sample-000399.png-new.png is: 0.0
 The MSE between sample-000400.png and newBarcodes/sample-000400.png-new.png is: 0.0
@@ -222,7 +222,7 @@ The MSE between sample-000435.png and newBarcodes/sample-000435.png-new.png is: 
 The MSE between sample-000438.png and newBarcodes/sample-000438.png-new.png is: 0.0
 The MSE between sample-000439.png and newBarcodes/sample-000439.png-new.png is: 0.0
 The MSE between sample-000440.png and newBarcodes/sample-000440.png-new.png is: 0.0
-The MSE between sample-000442.png and newBarcodes/sample-000442.png-new.png is: 0.9721212121212122
+The MSE between sample-000442.png and newBarcodes/sample-000442.png-new.png is: 0.0
 The MSE between sample-000443.png and newBarcodes/sample-000443.png-new.png is: 0.0
 The MSE between sample-000444.png and newBarcodes/sample-000444.png-new.png is: 0.0
 The MSE between sample-000445.png and newBarcodes/sample-000445.png-new.png is: 0.0
@@ -294,7 +294,7 @@ The MSE between sample-000590.png and newBarcodes/sample-000590.png-new.png is: 
 The MSE between sample-000591.png and newBarcodes/sample-000591.png-new.png is: 0.0
 The MSE between sample-000592.png and newBarcodes/sample-000592.png-new.png is: 0.0
 The MSE between sample-000593.png and newBarcodes/sample-000593.png-new.png is: 0.0
-The MSE between sample-000594.png and newBarcodes/sample-000594.png-new.png is: 1.062251655629139
+The MSE between sample-000594.png and newBarcodes/sample-000594.png-new.png is: 0.0
 The MSE between sample-000596.png and newBarcodes/sample-000596.png-new.png is: 0.0
 The MSE between sample-000598.png and newBarcodes/sample-000598.png-new.png is: 0.0
 The MSE between sample-000602.png and newBarcodes/sample-000602.png-new.png is: 0.0
@@ -310,7 +310,7 @@ The MSE between sample-000622.png and newBarcodes/sample-000622.png-new.png is: 
 The MSE between sample-000623.png and newBarcodes/sample-000623.png-new.png is: 0.0
 The MSE between sample-000624.png and newBarcodes/sample-000624.png-new.png is: 0.0
 The MSE between sample-000627.png and newBarcodes/sample-000627.png-new.png is: 0.0
-The MSE between sample-000628.png and newBarcodes/sample-000628.png-new.png is: 0.9721212121212122
+The MSE between sample-000628.png and newBarcodes/sample-000628.png-new.png is: 0.0
 The MSE between sample-000629.png and newBarcodes/sample-000629.png-new.png is: 0.0
 The MSE between sample-000635.png and newBarcodes/sample-000635.png-new.png is: 0.0
 The MSE between sample-000637.png and newBarcodes/sample-000637.png-new.png is: 0.0
@@ -423,7 +423,7 @@ The MSE between sample-000833.png and newBarcodes/sample-000833.png-new.png is: 
 The MSE between sample-000835.png and newBarcodes/sample-000835.png-new.png is: 0.0
 The MSE between sample-000837.png and newBarcodes/sample-000837.png-new.png is: 0.0
 The MSE between sample-000838.png and newBarcodes/sample-000838.png-new.png is: 0.0
-The MSE between sample-000839.png and newBarcodes/sample-000839.png-new.png is: 1.062251655629139
+The MSE between sample-000839.png and newBarcodes/sample-000839.png-new.png is: 0.0
 The MSE between sample-000840.png and newBarcodes/sample-000840.png-new.png is: 0.0
 The MSE between sample-000843.png and newBarcodes/sample-000843.png-new.png is: 0.0
 The MSE between sample-000845.png and newBarcodes/sample-000845.png-new.png is: 0.0
@@ -492,7 +492,7 @@ The MSE between sample-000971.png and newBarcodes/sample-000971.png-new.png is: 
 The MSE between sample-000975.png and newBarcodes/sample-000975.png-new.png is: 0.0
 The MSE between sample-000978.png and newBarcodes/sample-000978.png-new.png is: 0.0
 The MSE between sample-000980.png and newBarcodes/sample-000980.png-new.png is: 0.0
-The MSE between sample-000983.png and newBarcodes/sample-000983.png-new.png is: 0.9721212121212122
+The MSE between sample-000983.png and newBarcodes/sample-000983.png-new.png is: 0.0
 The MSE between sample-000986.png and newBarcodes/sample-000986.png-new.png is: 0.0
 The MSE between sample-000988.png and newBarcodes/sample-000988.png-new.png is: 0.0
 The MSE between sample-000990.png and newBarcodes/sample-000990.png-new.png is: 0.0
@@ -507,8 +507,18 @@ The MSE between sample-001005.png and newBarcodes/sample-001005.png-new.png is: 
 The MSE between sample-001007.png and newBarcodes/sample-001007.png-new.png is: 0.0
 The MSE between sample-001012.png and newBarcodes/sample-001012.png-new.png is: 0.0
 The MSE between sample-001013.png and newBarcodes/sample-001013.png-new.png is: 0.0
-The MSE between sample-001014.png and newBarcodes/sample-001014.png-new.png is: 1.062251655629139
+The MSE between sample-001014.png and newBarcodes/sample-001014.png-new.png is: 0.0
 The MSE between sample-001016.png and newBarcodes/sample-001016.png-new.png is: 0.0
 The MSE between sample-001017.png and newBarcodes/sample-001017.png-new.png is: 0.0
 The MSE between sample-001018.png and newBarcodes/sample-001018.png-new.png is: 0.0
 The MSE between sample-001019.png and newBarcodes/sample-001019.png-new.png is: 0.0
+The MSE between sample-000001.png and newBarcodes/sample-000001.png-new.png is: 0.0
+The MSE between sample-000002.png and newBarcodes/sample-000002.png-new.png is: 0.0
+The MSE between sample-000003.png and newBarcodes/sample-000003.png-new.png is: 0.0
+The MSE between sample-000005.png and newBarcodes/sample-000005.png-new.png is: 0.0
+The MSE between sample-000007.png and newBarcodes/sample-000007.png-new.png is: 0.0
+The MSE between sample-000011.png and newBarcodes/sample-000011.png-new.png is: 0.0
+The MSE between sample-000017.png and newBarcodes/sample-000017.png-new.png is: 0.0
+The MSE between sample-000023.png and newBarcodes/sample-000023.png-new.png is: 0.0
+The MSE between sample-000030.png and newBarcodes/sample-000030.png-new.png is: 0.0
+The MSE between sample-000032.png and newBarcodes/sample-000032.png-new.png is: 0.0
