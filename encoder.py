@@ -8,7 +8,36 @@ import sys
 img = imageio.imread(sys.argv[1])
 
 
+############################## RL ENCODING #####################################
+def rle_encode(data):
+    encoding = []
+    prev_char = ''
+    count = 1
+
+    for el in data:
+        if el != prev_char:
+
+            if prev_char != '':
+                encoding.append(count)
+                encoding.append(prev_char)
+                
+            count = 1
+            prev_char = el
+        else:
+            count += 1
+    else:
+        encoding.append(count)
+        encoding.append(prev_char)
+    return encoding
+
+############################## RL ENCODING #####################################
+
+
 ############################## FIND ENDS #####################################
+
+shape_x = img.shape[1]
+shape_y = img.shape[0]
+
 primeraLinea = 0
 segonaLinea = 0
 ultimaRepetida = 0
@@ -65,13 +94,19 @@ for i in reversed(range(img.shape[1])):
 
 
 
+############################## RL ENCODING #####################################
+
+wordBefore = np.array([[img[j][x] for x in range(leftMargin, rightMargin-1)] for j in range(ultimaRepetida+1, shape_y-9)])
+
+wordBefore.resize(len(wordBefore) * len(wordBefore[1]))
+total = (rle_encode(wordBefore))
+
+############################## RL ENCODING #####################################
+
 
 
 
 ############################## WRITE #####################################
-
-shape_x = img.shape[1]
-shape_y = img.shape[0]
 
 test1 = np.asarray(img[13]) #common row
 test1 = test1.tolist()
@@ -85,22 +120,32 @@ test = test1[12:-12]
 with open(sys.argv[2], "wb+") as f:
     
     #header
-    f.write(shape_y.to_bytes(3, byteorder="big", signed=False))
-    f.write(shape_x.to_bytes(3, byteorder="big", signed=False))
+    f.write(shape_y.to_bytes(2, byteorder="big", signed=False))
+    f.write(shape_x.to_bytes(2, byteorder="big", signed=False))
     
-    f.write(leftMargin.to_bytes(3, byteorder="big", signed=False))
-    f.write(rightMargin.to_bytes(3, byteorder="big", signed=False))
-    f.write(margeInferior.to_bytes(3, byteorder="big", signed=False))
+    f.write(leftMargin.to_bytes(2, byteorder="big", signed=False))
+    f.write(rightMargin.to_bytes(2, byteorder="big", signed=False))
+    f.write(margeInferior.to_bytes(2, byteorder="big", signed=False))
+
+    f.write(len(total).to_bytes(2, byteorder="big", signed=False))
 
     
     for i in range(len(test)):
-        f.write(test[i].to_bytes(3, byteorder="big", signed=False))
+        f.write(test[i].to_bytes(2, byteorder="big", signed=False))
     
     for i in range(12, leftMargin):
-        f.write(int(img[margeInferior][i]).to_bytes(3, byteorder="big", signed=False))
+        f.write(int(img[margeInferior][i]).to_bytes(2, byteorder="big", signed=False))
     
     for i in range(rightMargin, shape_x):
-        f.write(int(img[margeInferior][i]).to_bytes(3, byteorder="big", signed=False))
+        f.write(int(img[margeInferior][i]).to_bytes(2, byteorder="big", signed=False))
+
+
+
+
+    #word
+    for j in range(len(total)):
+    
+        f.write(int(total[j]).to_bytes(2, byteorder="big", signed=False))
 
 ############################## WRITE #####################################
 
